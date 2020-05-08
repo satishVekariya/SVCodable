@@ -15,6 +15,8 @@ To support mapping, a class or struct just needs to implement the ```Codable``` 
 ### To JSON:
 
 ```Swift
+import SVCodable
+
 struct Message: Codable {
     let sender: String
     let text: String
