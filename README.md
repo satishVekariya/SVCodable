@@ -14,7 +14,7 @@ To support mapping, a class or struct just needs to implement the ```Codable``` 
 
 ### To JSON:
 
-```
+```Swift
 struct Message: Codable {
     let sender: String
     let text: String
@@ -31,7 +31,7 @@ let jsonData:Data? = message.toJSONData()
 
 ### From JSON:
 
-```
+```Swift
 let messageStr = """
     {
        "sender": "Kaka",
