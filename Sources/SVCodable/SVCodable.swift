@@ -1,6 +1,6 @@
 import Foundation
 
-extension Encodable {
+public extension Encodable {
     func toJSONData() -> Data? {
         return try? JSONEncoder().encode(self)
     }
@@ -18,7 +18,7 @@ extension Encodable {
     }
 }
 
-extension Decodable {
+public extension Decodable {
     static func map(JSONString:String) -> Self? {
         do {
             return try JSONDecoder().decode(Self.self, from: Data(JSONString.utf8))
